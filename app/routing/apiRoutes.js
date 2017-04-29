@@ -25,7 +25,13 @@ router.post('/friends', (req, res) => {
 
   // (TODO) DEVELOPER ADD LOGIC TO PREVENT DUPLICATE
 
-  mysqlDB.query('INSERT INTO friends SET ?',[req.body], (err) => {
+ let newFriend = {
+   name: req.body.name,
+   photoUrl: req.body.photoUrl,
+   scores: req.body.scores.join()
+ };
+
+  mysqlDB.query('INSERT INTO friends SET ?',[newFriend], (err) => {
     if (err) throw err;
     mysqlDB.query('SELECT * FROM friends WHERE ?', [{name: req.body.name}], (err, data) => {
       if (err) throw err;

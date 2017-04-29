@@ -8,9 +8,8 @@ const PORT = process.env.PORT || 8080;
 
 ////////middleware's/////////
 app.use(bodyParser.json());
-
-// initialize routes
-app.use('/', require('./app/routing/htmlRoutes'));
+app.use(express.static(__dirname + '/app/public'));
+app.use(require('./app/routing/htmlRoutes'));
 app.use('/api', require('./app/routing/apiRoutes'));
 
 
