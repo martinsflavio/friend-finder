@@ -2,21 +2,29 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 
-
+// set express app
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+////////middleware's/////////
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+// initialize routes
+app.use('/', require('./app/routing/htmlRoutes'));
+app.use('/api', require('./app/routing/apiRoutes'));
 
 
 
-require('./app/routing/apiRoutes.js')(app);
-require('./app/routing/htmlRoutes.js')(app);
+// error handler
+// (TODO) DEVELOPER BUILD A ERROR HANDLER AS A MIDDLEWARE
+/*app.use( (err, req, res)=>{
+  console.log(err.message);
+  res.status(422).send({error: err.message});
+});*/
+////////////////////////////
 
 
+// listen requests
 app.listen(PORT, () => {
   console.log('Listen to Port: ' + PORT);
 })
