@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const mysqlDB = require('../data/network_db');
+const friendsDB = require('../data/friends');
 
 
 
@@ -9,36 +9,15 @@ const mysqlDB = require('../data/network_db');
 // get a list of friends from db
 router.get('/friends', (req, res) => {
 
-  mysqlDB.query('SELECT * FROM friends', (err, data) => {
-    if (err) throw next;
-    res.send({
-      type: 'GET',
-      friends: data
-    })
-  })
+ res.send({friendsDB});
 
 });
 
 
 // add friend to db
 router.post('/friends', (req, res) => {
-
-  // (TODO) DEVELOPER ADD LOGIC TO PREVENT DUPLICATE
-
- let newFriend = {
-   name: req.body.name,
-   photoUrl: req.body.photoUrl,
-   scores: req.body.scores.join()
- };
-
-  mysqlDB.query('INSERT INTO friends SET ?',[newFriend], (err) => {
-    if (err) throw err;
-    mysqlDB.query('SELECT * FROM friends WHERE ?', [{name: req.body.name}], (err, data) => {
-      if (err) throw err;
-      res.send(data);
-    })
-  })
-
+  friendsDB.push(req.body);
+  console.log(friendsDB);
 });
 
 
