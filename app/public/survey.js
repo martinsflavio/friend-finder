@@ -2,7 +2,7 @@
 $(document).ready(()=> {
 
   // submit btn
-  $('#submit').on('click', (e)=>{
+  $('#submit').on('click', e =>{
     e.preventDefault();
 
     const valid = () => {
@@ -45,10 +45,9 @@ $(document).ready(()=> {
     } else {
       alert("Please fill out all fields before submitting!");
     }
-
-
-
-
+  });
+  $('#close').on('click', () => {
+    location.reload();
   });
 });
 
