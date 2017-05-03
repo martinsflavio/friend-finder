@@ -38,7 +38,7 @@ $(document).ready(()=> {
         data: JSON.stringify(newFriend),
       }).done((res,err)=>{
         $('#matchName').text(res.name);
-        $('#matchImg').attr({src: res.photo, alt: res.name});
+        $('#matchImg').attr({src: res.photoUrl, alt: res.name});
         $('#resultsModal').modal();
       });
 

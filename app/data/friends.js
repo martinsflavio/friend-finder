@@ -8,7 +8,7 @@
 const tableArray = [
 	{
 	  "name":"Archie Andrews",
-	  "photo":"https://upload.wikimedia.org/wikipedia/en/0/0d/Archieandrwcmc.png",
+	  "photoUrl":"https://upload.wikimedia.org/wikipedia/en/0/0d/Archieandrwcmc.png",
 	  "scores":[
 	      5,
 	      1,
@@ -24,7 +24,7 @@ const tableArray = [
 	},
 	{
 	  "name":"Betty Cooper",
-	  "photo":"https://s-media-cache-ak0.pinimg.com/originals/2b/f1/66/2bf16634681059a53d164021a9efddec.png",
+	  "photoUrl":"https://s-media-cache-ak0.pinimg.com/originals/2b/f1/66/2bf16634681059a53d164021a9efddec.png",
 	  "scores":[
 	      2,
 	      3,
@@ -40,7 +40,7 @@ const tableArray = [
 	},
 	{
 	  "name":"Veronica Lodge",
-	  "photo":"https://upload.wikimedia.org/wikipedia/en/6/6a/Veronicaldg.png",
+	  "photoUrl":"https://upload.wikimedia.org/wikipedia/en/6/6a/Veronicaldg.png",
 	  "scores":[
 	      2,
 	      5,
@@ -56,7 +56,7 @@ const tableArray = [
 	},
 	{
 	  "name":"Jughead Jones",
-	  "photo":"https://upload.wikimedia.org/wikipedia/en/7/75/Jugheadjns.png",
+	  "photoUrl":"https://upload.wikimedia.org/wikipedia/en/7/75/Jugheadjns.png",
 	  "scores":[
 	      5,
 	      5,
@@ -72,7 +72,7 @@ const tableArray = [
 	},
 	{
 	  "name":"Reggie Mantle",
-	  "photo":"https://static.comicvine.com/uploads/square_small/4/49448/1894899-reggie5.jpg",
+	  "photoUrl":"https://static.comicvine.com/uploads/square_small/4/49448/1894899-reggie5.jpg",
 	  "scores":[
 	      1,
 	      5,
@@ -88,7 +88,7 @@ const tableArray = [
 	},
 	{
 	  "name":"Moose Mason",
-	  "photo":"https://upload.wikimedia.org/wikipedia/en/8/85/Moosemsn.png",
+	  "photoUrl":"https://upload.wikimedia.org/wikipedia/en/8/85/Moosemsn.png",
 	  "scores":[
 	      1,
 	      5,
@@ -104,7 +104,7 @@ const tableArray = [
 	},
 	{
 	  "name":"Cheryl Blossom",
-	  "photo":"https://static.comicvine.com/uploads/scale_small/11/111746/3346758-2033876218-28308.jpg",
+	  "photoUrl":"https://static.comicvine.com/uploads/scale_small/11/111746/3346758-2033876218-28308.jpg",
 	  "scores":[
 	      1,
 	      5,

@@ -12,13 +12,11 @@ router.get('/friends', (req, res) => {
 
 // add friend to db
 router.post('/friends', (req, res) => {
-  let newFriend = req.body;
-  let friendsList = friendsDB;
+  let friend = req.body;
+  let listOfFriends = friendsDB;
 
-
-  res.send(findBestFriend(newFriend, friendsList));
-  friendsDB.push(newFriend);
-
+  res.send(findBestFriend(friend, listOfFriends));
+  friendsDB.push(friend);
 });
 
 // find closest Friend
@@ -46,6 +44,9 @@ const findBestFriend = (newFriend, friendsList) => {
       }
     }
   }
+  console.log(closestFriend);
+  console.log(closestScore);
+
   return closestFriend;
 };
 
