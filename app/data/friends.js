@@ -8,12 +8,12 @@
 const tableArray = [
 	{
 	  "name":"Archie Andrews",
-	  "photo":"./assets/images/Archieandr.png",
+	  "photo":"https://upload.wikimedia.org/wikipedia/en/0/0d/Archieandrwcmc.png",
 	  "scores":[
 	      5,
 	      1,
 	      4,
-	      4,
+	      1,
 	      5,
 	      1,
 	      2,
@@ -24,12 +24,12 @@ const tableArray = [
 	},
 	{
 	  "name":"Betty Cooper",
-	  "photo":"./assets/images/Bettys.png",
+	  "photo":"https://s-media-cache-ak0.pinimg.com/originals/2b/f1/66/2bf16634681059a53d164021a9efddec.png",
 	  "scores":[
 	      2,
 	      3,
 	      2,
-	      2,
+	      1,
 	      3,
 	      3,
 	      2,
@@ -40,9 +40,9 @@ const tableArray = [
 	},
 	{
 	  "name":"Veronica Lodge",
-	  "photo":"./assets/images/Veronicaldg.png",
+	  "photo":"https://upload.wikimedia.org/wikipedia/en/6/6a/Veronicaldg.png",
 	  "scores":[
-	      1,
+	      2,
 	      5,
 	      1,
 	      1,
@@ -50,15 +50,15 @@ const tableArray = [
 	      5,
 	      1,
 	      5,
-	      1,
+	      2,
 	      3
 	    ]
 	},
 	{
 	  "name":"Jughead Jones",
-	  "photo":"./assets/images/Jugheadjns.png",
+	  "photo":"https://upload.wikimedia.org/wikipedia/en/7/75/Jugheadjns.png",
 	  "scores":[
-	      1,
+	      5,
 	      5,
 	      1,
 	      1,
@@ -72,39 +72,39 @@ const tableArray = [
 	},
 	{
 	  "name":"Reggie Mantle",
-	  "photo":"./assets/images/Reggie_Mantle.png",
+	  "photo":"https://static.comicvine.com/uploads/square_small/4/49448/1894899-reggie5.jpg",
 	  "scores":[
 	      1,
 	      5,
 	      1,
-	      1,
+	      3,
 	      5,
-	      5,
-	      1,
-	      5,
+	      2,
+	      2,
+	      2,
 	      1,
 	      3
 	    ]
 	},
 	{
 	  "name":"Moose Mason",
-	  "photo":"./assets/images/Moosemsn.png",
+	  "photo":"https://upload.wikimedia.org/wikipedia/en/8/85/Moosemsn.png",
 	  "scores":[
 	      1,
 	      5,
 	      1,
 	      1,
+	      3,
 	      5,
 	      5,
-	      1,
 	      5,
-	      1,
+	      2,
 	      3
 	    ]
 	},
 	{
 	  "name":"Cheryl Blossom",
-	  "photo":"./assets/images/Cherylblsm.png",
+	  "photo":"https://static.comicvine.com/uploads/scale_small/11/111746/3346758-2033876218-28308.jpg",
 	  "scores":[
 	      1,
 	      5,

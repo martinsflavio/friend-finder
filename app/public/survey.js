@@ -36,15 +36,10 @@ $(document).ready(()=> {
         processData: false,
         contentType: 'application/json',
         data: JSON.stringify(newFriend),
-      }).done((err,res)=>{
-        if (err) {
-          console.log(err);
-        }
-
-        console.log(res);
-        //(TODO) DEVELOPER DISPLAY BEST MACH IN MODAL LOGIC HERE
-
-
+      }).done((res,err)=>{
+        $('#matchName').text(res.name);
+        $('#matchImg').attr({src: res.photo, alt: res.name});
+        $('#resultsModal').modal();
       });
 
     } else {
